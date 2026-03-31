@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 Product Manager / Cart App
 
-## Getting Started
+This project is part of **Experiment 7**. It is a modern web application built with Next.js that allows users to manage a list of products inside a cart.
 
-First, run the development server:
+The app demonstrates global state management using Zustand and persistent storage using localStorage.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+---
+
+## 🚀 Features
+
+* View products in a cart layout
+* Increase / decrease product quantity
+* Remove products from the cart
+* Automatically updated total price
+* Persistent data (saved in browser using localStorage)
+* Clean and responsive UI
+
+---
+
+## 🧰 Tech Stack
+
+* Next.js (App Router)
+* React
+* TypeScript
+* Tailwind CSS
+* Zustand (state management)
+* Zustand Persist Middleware
+
+---
+
+## 📁 Project Structure
+
+app/
+page.tsx → Main entry page
+
+components/
+Cart.tsx → Cart UI (products, quantity, actions)
+
+store/
+useProductStore.ts → Zustand store (state + logic)
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+
+git clone https://github.com/PHANUELF/24bcy70220-7b-phanuel-philip.git
+
+2. Navigate into the project:
+
+cd 24bcy70220-7b-phanuel-philip
+
+3. Install dependencies:
+
+pnpm install
+
+4. Run the development server:
+
 pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 💡 How It Works
 
-To learn more about Next.js, take a look at the following resources:
+* The application uses Zustand to manage global state.
+* The persist middleware saves product data to localStorage.
+* When the page reloads, the cart data is restored automatically.
+* Quantity updates and deletions instantly update the UI and storage.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📊 Learning Outcomes
 
-## Deploy on Vercel
+* Understanding global state management
+* Using Zustand with persistence
+* Managing UI and state separation
+* Building a responsive cart interface
+* Handling client-side storage in modern web apps
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👤 Author
+
+Phanuel Philip
+
+---
+
+## 📌 Notes
+
+* This project is for academic purposes (Experiment 7).
+* Data is stored locally in the browser (no backend).
+
+---
